@@ -26,6 +26,18 @@ productWhichMadeMostMoney returns an object with an id for that product and a to
 
 //write the productWhichMadeMostMoney function
 
-function bestSales(sales) {}
+function bestSales(sales) {
+  
+// for (const x in sales) {}
+
+  const totalSales = sales.map( x => {
+    sales.amount * sales.productId
+  });
+
+  const bestSales = Math.max(...totalSales);
+
+  return bestSales;
+
+}
 
 module.exports = { bestSales, sales };
